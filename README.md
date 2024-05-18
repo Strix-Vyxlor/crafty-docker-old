@@ -17,6 +17,7 @@ Map the folowing ports and volumes.
 
 ```
 podman run \
+    --name crafty \
     --detach \
     --volume crafty:/var/opt/minecraft/crafty \
     -p 8443:8443 \

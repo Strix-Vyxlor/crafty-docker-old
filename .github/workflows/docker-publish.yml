@@ -14,6 +14,10 @@ on:
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      parameters:
+        description: "why d o do this"
 
 env:
   # Use docker.io for Docker Hub if empty

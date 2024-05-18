@@ -15,7 +15,7 @@ Map the folowing ports and volumes.
 - TZ: the timezone for the server
 - /var/opt/minecraft/crafty: here is where he configs live
 
-'''
+```
 podman run \
     --detach \
     --volume crafty:/var/opt/minecraft/crafty \
@@ -24,7 +24,7 @@ podman run \
     -p 25565:25565 \
     -e TZ=Etc/Utc \
     ghcr.io/strix-vyxlor/crafty-docker:main
-'''
+```
 
-find files with '''podman volume inspect crafty''';
+find files with ```podman volume inspect crafty```;
 (for docker replace podman with docker)
